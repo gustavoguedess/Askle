@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="510dp"
+    tools:context="com.askle.askle.TelaPerfil">
+
+    <ImageView
+        android:id="@+id/imgUsu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/nomeUsuPerfil"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_below="@+id/imgUsu"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="nome e sobrenome usuario" />
+
+    <TextView
+        android:id="@+id/emailUsuarioPerfil"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="37dp"
+        android:text="email do usuario"
+        android:layout_below="@+id/nomeUsuPerfil"
+        android:layout_alignStart="@+id/nomeUsuPerfil" />
+
+    <TextView
+        android:id="@+id/cpfUsuarioPerfil"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="36dp"
+        android:text="cpf usuario"
+        android:layout_below="@+id/emailUsuarioPerfil"
+        android:layout_alignStart="@+id/emailUsuarioPerfil" />
+
+    <TextView
+        android:id="@+id/txtRgUsuario"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_alignStart="@+id/cpfUsuarioPerfil"
+        android:layout_below="@+id/cpfUsuarioPerfil"
+        android:layout_marginTop="31dp"
+        android:text="rg usuario" />
+
+    <Button
+        android:id="@+id/btPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_customizado"
+        android:textColor="@color/colorPrimary"
+        android:width="150dp"
+        android:text="editar perfil"
+        android:layout_below="@+id/txtRgUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>
+</ScrollView>

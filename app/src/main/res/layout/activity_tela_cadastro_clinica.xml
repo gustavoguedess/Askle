@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    tools:context="com.askle.askle.TelaCadastroClinica">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/icone_group"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Registre-se" />
+
+    <EditText
+        android:id="@+id/txtNomeCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome do Consultorio" />
+
+    <EditText
+        android:id="@+id/txtCNPJ"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtNomeCons"
+        android:layout_below="@+id/txtNomeCons"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="CNPJ" />
+
+    <EditText
+        android:id="@+id/txtEmailCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/txtCNPJ"
+        android:layout_below="@+id/txtCNPJ"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txtSenhaRegCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/txtEmailCons"
+        android:layout_below="@+id/txtEmailCons"
+        android:layout_marginTop="16dp"
+        android:hint="Senha"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtConfSenhaRegCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_below="@+id/txtSenhaRegCons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Confirmar Senha"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="#2196f3"
+        android:layout_marginTop="18dp"
+        android:text="Registrar"
+        android:layout_below="@+id/rdTermos"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:id="@+id/rdTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceito os"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/txtCrmsCons"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btTermosReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:text=" termos de uso"
+        android:layout_toEndOf="@+id/rdTermos"
+        android:layout_marginStart="-20dp"
+        android:layout_alignTop="@+id/rdTermos"
+        android:layout_alignBottom="@+id/rdTermos" />
+
+    <EditText
+        android:id="@+id/txtEnderecoCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Endereço"
+        android:layout_below="@+id/txtConfSenhaRegCons"
+        android:layout_alignStart="@+id/txtConfSenhaRegCons" />
+
+    <EditText
+        android:id="@+id/txtBairroCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtEnderecoCons"
+        android:layout_below="@+id/txtEnderecoCons"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bairro" />
+
+    <EditText
+        android:id="@+id/txtHorarioFuncCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtBairroCons"
+        android:layout_below="@+id/txtBairroCons"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="horario. ex: 08:00 - 17:00" />
+
+    <EditText
+        android:id="@+id/txtDiasFuncCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Dias. ex: Seg a Sex"
+        android:layout_below="@+id/txtHorarioFuncCons"
+        android:layout_alignStart="@+id/txtHorarioFuncCons" />
+
+    <EditText
+        android:id="@+id/txtEspecCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtDiasFuncCons"
+        android:layout_below="@+id/txtDiasFuncCons"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Especialidade(s)" />
+
+    <EditText
+        android:id="@+id/txtDoutoresCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Doutor(a/res)"
+        android:layout_below="@+id/txtEspecCons"
+        android:layout_alignStart="@+id/txtEspecCons"
+        android:layout_marginTop="19dp" />
+
+    <EditText
+        android:id="@+id/txtCrmsCons"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtDoutoresCons"
+        android:layout_below="@+id/txtDoutoresCons"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="CRMs dos médicos respectivamente" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtCrmsCons"
+        android:layout_below="@+id/txtCrmsCons"
+        android:layout_marginTop="19dp"
+        android:text="OBS: Informações como os nomes de médicos ou seus respectivos CRMs devem ser separados por ponto e vírgula (;)"
+        android:layout_alignEnd="@+id/txtCrmsCons" />
+
+
+</RelativeLayout>
+
+    </ScrollView>

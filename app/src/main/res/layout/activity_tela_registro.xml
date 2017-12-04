@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.askle.askle.TelaRegistro">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/icone_group"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Registre-se" />
+
+    <EditText
+        android:id="@+id/txtNomeReg"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/txtSobrenomeReg"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignStart="@+id/txtNomeReg"
+        android:layout_below="@+id/txtNomeReg"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Sobrenome" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/txtSobrenomeReg"
+        android:layout_below="@+id/txtSobrenomeReg"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txtSenhaReg"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/txtEmail"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Senha"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtConfSenhaReg"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textedit_customizado"
+        android:gravity="center"
+        android:layout_below="@+id/txtSenhaReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Confirmar Senha"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="#2196f3"
+        android:layout_marginTop="18dp"
+        android:text="Registrar"
+        android:layout_below="@+id/rdTermos"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:id="@+id/rdTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceito os"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="23dp"
+        android:layout_below="@+id/txtConfSenhaReg"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btTermosReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:text=" termos de uso"
+        android:layout_above="@+id/btRegistrar"
+        android:layout_toEndOf="@+id/rdTermos"
+        android:layout_marginStart="-20dp"
+        android:layout_alignTop="@+id/rdTermos" />
+
+
+</RelativeLayout>
+</ScrollView>

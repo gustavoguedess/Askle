@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="910dp"
+        tools:context="com.askle.askle.TelaInfoConsultorio">
+
+        <TextView
+            android:id="@+id/txtNomeCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Nome Consultório"
+            android:layout_marginTop="36dp" />
+
+        <ImageView
+            android:id="@+id/imgCons"
+            android:layout_width="285dp"
+            android:layout_height="181dp"
+            android:background="@drawable/image_border"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteY="69dp"
+            tools:layout_editor_absoluteX="50dp"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/txtNomeCons"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgCons"
+            android:layout_below="@+id/imgCons"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:text="Horário de Funcionamento:" />
+
+        <TextView
+            android:id="@+id/txtHorFunc"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textedit_customizado"
+            android:gravity="center"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_marginTop="21dp"
+            android:text="DD à DD de HH:MM até HH:MM" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtHorFunc"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtHorFunc"
+            android:layout_marginTop="35dp"
+            android:text="Endereço:" />
+
+        <TextView
+            android:id="@+id/txtEndereco"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textedit_customizado"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:text="e n d e r e ç o"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Especialidade(s):"
+            android:layout_below="@+id/txtEndereco"
+            android:layout_alignStart="@+id/txtEndereco"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:id="@+id/txtEspecialidades"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textedit_customizado"
+            android:gravity="center"
+            android:layout_alignStart="@+id/textView16"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="22dp"
+            android:text="e s p e c i a l i d a d e s" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="Doutor(a/es):"
+            android:layout_below="@+id/txtEspecialidades"
+            android:layout_alignStart="@+id/txtEspecialidades" />
+
+        <TextView
+            android:id="@+id/txtDoutores"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textedit_customizado"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:layout_marginTop="20dp"
+            android:text="d o u t o r e s" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="135dp"
+            android:text="Contato:"
+            android:layout_below="@+id/txtEspecialidades"
+            android:layout_alignStart="@+id/txtEspecialidades" />
+
+        <TextView
+            android:id="@+id/txtContato"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/textedit_customizado"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:layout_marginTop="120dp"
+            android:text="t e l e f o n e" />
+
+        <Button
+            android:id="@+id/btEditarPerfilCons"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_customizado"
+            android:textColor="@color/colorPrimary"
+            android:text="editar perfil"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/txtContato"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.askle.askle.TelaEscolhaInicial">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Escolha seu tipo de usuário Askle" />
+
+    <Button
+        android:id="@+id/btAreaCliente"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="52dp"
+        android:text="Cliente"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btAreaCons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/btAreaCliente"
+        android:layout_below="@+id/btAreaCliente"
+        android:layout_marginTop="39dp"
+        android:text="Consultório"
+        android:layout_alignEnd="@+id/btAreaCliente" />
+
+
+</RelativeLayout>

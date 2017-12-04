@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/btEntrar"
+            android:icon="@drawable/icone_person"
+            android:title="Entrar" />
+        <item
+            android:id="@+id/btRegistro"
+            android:icon="@drawable/icone_addgroup"
+            android:title="Registrar-se" />
+        <item
+            android:id="@+id/btTermos"
+            android:icon="@drawable/icone_termo"
+            android:title="Termos de Serviço" />
+        <item
+            android:id="@+id/btAjuda"
+            android:icon="@drawable/icone_ajuda"
+            android:title="Ajuda" />
+        <item
+            android:id="@+id/btSobre"
+            android:icon="@drawable/icone_info"
+            android:title="Sobre" />
+    </group>
+
+    <item android:title="Trabalhe conosco">
+        <menu>
+            <item
+                android:id="@+id/btCadCons"
+                android:icon="@drawable/icone_addlocation"
+                android:title="Cadastrar Consultorio" />
+            <item
+                android:id="@+id/btLoginCons"
+                android:icon="@drawable/icone_hospital_add"
+                android:title="Logar como Consultorio" />
+
+        </menu>
+    </item>
+
+</menu>
